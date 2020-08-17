@@ -39,7 +39,11 @@ body{
     line-height: 25px;
 }
 .left__form{
-    position: relative;
+    /* position: relative; */
+    display:flex;
+    /* justify-content: center; */
+   
+    align-items: center;
     margin-top: 25px;
 }
 .left__form-input{
@@ -48,15 +52,14 @@ body{
     border: 1px solid  hsl(0, 36%, 70%);
     border-radius: 30px;
     outline: none;
-    padding-left: 40px;
     color: hsl(0, 6%, 24%);
+    padding-left: 40px; 
 }
 .left__form-input::placeholder{
     color: hsl(0, 36%, 70%);
 }
 .left__form-button{
-    position: absolute;
-    left: 400px;
+    margin-left: -3rem;
     width: 75px;
     height: 50px;
     cursor: pointer;
@@ -90,7 +93,6 @@ body{
         box-sizing: border-box;
     }
     .container {
-        border: 3px solid greenyellow;
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
@@ -127,7 +129,7 @@ body{
     .left__text {
         text-align: center;
         font-size: 1rem;;
-        padding: 1rem;
+        padding: 2rem;
         margin-bottom: 1rem;
     }
     .left__form {
@@ -136,20 +138,18 @@ body{
         margin: 0 2rem;
     }
     .left__form-input {
-        width: 80%;
+        width: 95%;
         height: 35px;
         border: 1px solid hsl(0, 36%, 70%);
-        border-radius: 10px;
+        border-radius: 30px;
         padding-left: 15px;
         outline: none;
     }
     .left__form-button{
-        position: absolute;
-        top: 0px;
         left: 230px;
         width:60px;
         height: 35px;
-    }
+    } 
     .left__form-button:hover{
         height: 37px;
         width: 62px;
