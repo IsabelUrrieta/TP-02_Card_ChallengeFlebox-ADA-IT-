@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 0%, 98%) );
+}
+.left{
+    padding: 0 175px;
+    background-image: url(./images/bg-pattern-desktop.svg)
+}
+.left__img{
+    margin-top: 50px;
+}
+.left__title{
+    margin-top: 100px;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: hsl(0, 36%, 70%);
+    font-weight: lighter;
+    letter-spacing: 18px;
+}
+.left__title--mod{
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+}
+.left__text{
+    margin-top: 25px;
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    line-height: 25px;
+}
+.left__form{
+    position: relative;
+    margin-top: 25px;
+}
+.left__form-input{
+    width: 450px;
+    height: 50px;
+    border: 1px solid  hsl(0, 36%, 70%);
+    border-radius: 30px;
+    outline: none;
+    padding-left: 40px;
+    color: hsl(0, 6%, 24%);
+}
+.left__form-input::placeholder{
+    color: hsl(0, 36%, 70%);
+}
+.left__form-button{
+    position: absolute;
+    left: 400px;
+    width: 75px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, hsl(0, 80%,86%),  hsl(0, 74%, 74%));
+}
+.left__form-button:hover{
+    box-shadow: 0px 0px 20px hsla(0, 93%, 68%, 0.561);
+    height: 52px;
+    width: 80px;
+}
+.right{
+    height: 100%;
+}
+.right__img{
+    height: 100%;
+}
+.footer{
+    margin-top: 4px;
+}
+.logo-mobile{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        border: 3px solid greenyellow;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+    }
+    .left {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .right {
+        width: 100%;
+    }
+    .left__img {
+        display: none;
+    }
+    .right__img {
+     height: 45vh;
+     width:100%;
+     object-fit: cover;
+     object-position: 0% 20%;
+    }
+    .logo-mobile {
+        margin: 2rem 2rem;
+        display: block;
+        width: 7rem;
+    }
+    .left__title {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .left__text {
+        text-align: center;
+        font-size: 1rem;;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .left__form {
+        position: relative;
+        padding: 0 0 5rem 1rem;
+        margin: 0 2rem;
+    }
+    .left__form-input {
+        width: 80%;
+        height: 35px;
+        border: 1px solid hsl(0, 36%, 70%);
+        border-radius: 10px;
+        padding-left: 15px;
+        outline: none;
+    }
+    .left__form-button{
+        position: absolute;
+        top: 0px;
+        left: 230px;
+        width:60px;
+        height: 35px;
+    }
+    .left__form-button:hover{
+        height: 37px;
+        width: 62px;
+    }
+    
+}
+
